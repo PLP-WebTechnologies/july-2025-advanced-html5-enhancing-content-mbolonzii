@@ -6,22 +6,133 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="#">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required /><br /><br />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required /><br /><br />
-
-      <label for="password">Password:</label>
-      <input
-        type="password"
-        id="password"
-        name="password"
-        required
-      /><br /><br />
-
-      <input type="submit" value="Submit" />
-    </form>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#counties">Counties</a></li>
+          <li><a href="#teams">Teams</a></li>
+          <li><a href="#registration">Registration</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h1>HTML5 OVERVIEW</h1>
+        <p>
+          This document showcases various HTML5 elements including lists,
+          tables, and forms. Below you will find a list of the top five counties
+          in Kenya by population, a table of top three teams from major leagues,
+          and a user registration form.
+        </p>
+        <h2>My Bike</h2>
+        <img
+          src="images/bmx.jpg"
+          width="400px"
+          height="300px"
+          alt="My Weekend Ride"
+        />
+      </article>
+      <section>
+        <h1>Top Five Counties in Kenya by Population</h1>
+        <ol>
+          <li>Nairobi</li>
+          <li>Mombasa</li>
+          <li>Kisumu</li>
+          <li>Nakuru</li>
+          <li>Uasin Gishu</li>
+        </ol>
+        <h1>Top Three Teams From Major Leagues</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>League</th>
+              <th>Team</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <strong><td>Premier League</td></strong>
+              <td>Manchester United</td>
+              <td>Manchester City</td>
+              <td>Arsenal</td>
+            </tr>
+            <tr>
+              <strong><td>La Liga</td></strong>
+              <td>Real Madrid</td>
+              <td>Barcelona</td>
+              <td>Atletico Madrid</td>
+            </tr>
+            <tr>
+              <strong><td>Serie A</td></strong>
+              <td>Juventus</td>
+              <td>AC Milan</td>
+              <td>Inter Milan</td>
+            </tr>
+            <tr>
+              <strong><td>Bundesliga</td></strong>
+              <td>Bayern Munich</td>
+              <td>Borussia Dortmund</td>
+              <td>RB Leipzig</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h1>User Registration Form</h1>
+        <form action="#" method="post">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            required
+            autocomplete="username"
+          /><br /><br />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            autocomplete="email"
+          /><br /><br />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+            autocomplete="new-password"
+          /><br /><br />
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Re-enter your password"
+            required
+            autocomplete="new-password"
+          /><br /><br />
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required /><br /><br />
+          <label for="country">Country:</label>
+          <input
+            type="text"
+            id="country"
+            name="country"
+            placeholder="Enter your country"
+            required
+            autocomplete="country-name"
+          /><br /><br />
+          <input type="submit" value="Register" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Enhanced Form Example</p>
+    </footer>
   </body>
 </html>
